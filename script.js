@@ -2,9 +2,7 @@ function showName() {
 
     let name = document.getElementById("name").value;
 
-    // Nếu nhập 36
     if (name === "36") {
-
         document.body.innerHTML = `
         <div style="
             display:flex;
@@ -20,10 +18,8 @@ function showName() {
             36
         </div>
         `;
-
         return;
     }
 
-    // Các trường hợp còn lại
     document.getElementById("result").innerHTML = "Xin chào " + name + "!";
 }
