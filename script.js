@@ -3,6 +3,9 @@ function showName() {
     let name = document.getElementById("name").value;
 
     if (name === "36") {
+
+        document.getElementById("music").play();
+
         document.body.innerHTML = `
         <div style="
             display:flex;
@@ -18,8 +21,10 @@ function showName() {
             36
         </div>
         `;
+
         return;
     }
 
-    document.getElementById("result").innerHTML = "Xin chào " + name + "!";
+    document.getElementById("result").innerHTML =
+        "Xin chào " + name + "!";
 }
