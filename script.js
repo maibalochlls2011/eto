@@ -1,10 +1,15 @@
 function showName() {
 
     let name = document.getElementById("name").value;
+    let music = document.getElementById("music");
 
     if (name === "36") {
 
-        document.getElementById("music").play();
+        music.currentTime = 0;
+
+        music.play().catch(err => {
+            console.log(err);
+        });
 
         document.getElementById("content").innerHTML = `
         <div style="
