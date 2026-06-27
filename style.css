@@ -1,0 +1,37 @@
+body{
+    background-color: #eef;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color: blue;
+}
+
+input{
+    padding: 8px;
+    font-size: 16px;
+}
+
+button{
+    padding: 8px 15px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+#result{
+    font-size: 20px;
+    color: green;
+}
+body{
+    animation: flash 2s infinite;
+}
+
+@keyframes flash{
+    0%   {background: red;}
+    20%  {background: blue;}
+    40%  {background: green;}
+    60%  {background: yellow;}
+    80%  {background: purple;}
+    100% {background: red;}
+}
