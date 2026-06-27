@@ -6,7 +6,7 @@ function showName() {
 
         document.getElementById("music").play();
 
-        document.body.innerHTML = `
+        document.getElementById("content").innerHTML = `
         <div style="
             display:flex;
             justify-content:center;
